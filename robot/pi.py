@@ -11,11 +11,11 @@ import pigpio
 
 from readonly import RobotBase, MOTORS
 
-OPERATOR_IP = "" # your laptop/pc ip address on IC2026 Network
+OPERATOR_IP = "192.168.50.150" # your laptop/pc ip address on IC2026 Network
 OPERATOR_PORT = 5600 # the port for video streaming 
 TEAM_ID = -1 # Your team ID
 
-PI_IP = "" # Your pi IP
+PI_IP = "192.168.50.5" # Your pi IP
 PI_PORT = 5005  # 
 
 MIN_DUTY_FLOOR = 30
@@ -52,7 +52,7 @@ class Robot(RobotBase):
         pass
 
 if __name__ == "__main__":
-    team_id = 0  # your team id here
+    team_id = 14  # your team id here
 
     robot = Robot(team_id)
     try:
