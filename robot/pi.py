@@ -8,6 +8,7 @@ import sys
 import time
 import threading
 import pigpio
+import socket
 
 from readonly import RobotBase, MOTORS
 
