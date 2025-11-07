@@ -68,7 +68,6 @@ def get_input():
             "Pivot1": float(pivot1),
             "Pivot2": float(pivot2)
         }
-        
         try:
             sock.sendto(json.dumps(payload).encode("utf-8"), (PI_IP,PI_PORT)) # send our json to our Pi at the appropriate IP an Port
             sock.settimeout(0.001) # set a timoout for the socket
